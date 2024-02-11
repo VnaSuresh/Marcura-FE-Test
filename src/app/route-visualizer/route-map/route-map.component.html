@@ -1,0 +1,15 @@
+<div class="maps-wrapper">
+  <div class="filter-wrapper">
+    <app-route-filter [routeData]="routeData" (selectedRoute)="onSelectionChange($event)"></app-route-filter>
+  </div>
+  <div class="route-map">
+    <!-- <google-map [options]="options">
+      <map-marker *ngFor="let markerPosition of markerPositions" [position]="markerPosition"
+        [options]="markerOptions"></map-marker>
+      <map-polyline [options]="polylineOptions"></map-polyline>
+    </google-map> -->
+  </div>
+  <div class="speed-chart" *ngIf="selectedRoute">
+    <app-speed-chart [routeData]="selectedRoute"></app-speed-chart>
+  </div>
+</div>

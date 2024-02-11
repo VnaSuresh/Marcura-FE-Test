@@ -1,0 +1,10 @@
+<div [formGroup]="routeForm">
+  <mat-form-field>
+    <mat-label>Select Route</mat-label>
+    <mat-select formControlName="route">
+      @for (route of routeData; track route) {
+      <mat-option [value]="route">{{route?.from_port}} - {{route?.to_port}}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+</div>
