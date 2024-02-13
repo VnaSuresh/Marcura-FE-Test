@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { NgChartsModule } from 'ng2-charts';
@@ -24,6 +25,8 @@ import { SpeedChartComponent } from './speed-chart/speed-chart.component';
     GoogleMapsModule,
     MatFormFieldModule,
     MatSelectModule,
+    MatSelectModule,
+    MatExpansionModule,
     ReactiveFormsModule,
     NgChartsModule,
     RouteVisualizerRoutingModule
